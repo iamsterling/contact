@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", e => {
     console.log(root)
 
 
-    pdf("https://github.com/sterling-holt/contact/blob/main/public/media/PROMOTION.pdf")
+    pdf("/media/PROMOTION.pdf")
     contact(root)
 })

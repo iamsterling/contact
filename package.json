@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "dev": "webpack serve --open --mode development"
+    "dev": "webpack serve --open --mode development",
+    "start": "webpack serve --open"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,8 @@
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
+    "pdfjs": "^2.5.3",
+    "pdfjs-dist": "^4.0.379",
     "scss": "^0.2.4"
   }
 }

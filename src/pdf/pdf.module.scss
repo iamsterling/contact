@@ -1,0 +1,41 @@
+.section {
+    grid-area: content;
+    background: white;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    height: 100svh;
+    overflow-x: hidden;
+
+
+    .container {
+        height: 100vh;
+        height: 100svh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        scroll-snap-align: center;
+
+        &.active {
+            
+            canvas.page {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        canvas.page {
+            border-radius: 1rem;
+            transform: scale(0.7);
+            transition: 1.25s ease-in-out;
+            opacity: 0;
+            pointer-events: none;
+
+            max-height: 50%;
+    
+    
+            width: 75%;
+            max-width: 720px;
+        }
+    }
+}
